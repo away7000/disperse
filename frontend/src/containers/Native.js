@@ -60,14 +60,14 @@ const Native = () => {
     }
 
     useEffect(() => {
-        if (chainId === 97) {
-            setCurrency("BNB");
+        if (chainId === 188881) {
+            setCurrency("CONDOR");
         } else if (chainId === 4690) {
             setCurrency("IOTX-T");
         }
     },[chainId]);
 
-    if ((chainId === 97 || chainId === 4690) && active) {
+    if ((chainId === 188881 || chainId === 4690) && active) {
         return(
             <Grid>
                 <Grid.Row>
@@ -109,8 +109,8 @@ const Native = () => {
                     </Grid.Column>
                     <Grid.Column width={10}>
                         <Grid.Row>
-                            {!(chainId === 97 || chainId === 4690) ?
-                            <div><p>This DAPP only supports Binance Testnet(Chain ID : 97) and IOTEX Testnet ( Chain ID : 4690)</p></div>
+                            {!(chainId === 188881 || chainId === 4690) ?
+                            <div><p>This DAPP only supports Binance Testnet(Chain ID : 188881) and IOTEX Testnet ( Chain ID : 4690)</p></div>
                             : <div></div>}
                         </Grid.Row>
                         <Grid.Row>
