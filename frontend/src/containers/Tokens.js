@@ -159,7 +159,7 @@ const Tokens = () => {
                     </Grid.Column>
                     <Grid.Column width={10}>
                         <Grid.Row>
-                            {!(chainId === 97 || chainId === 4690) ?
+                            {!(chainId === 188881 || chainId === 4690) ?
                             <div><p>This DAPP only supports Condor Testnet(Chain ID : 188881) and IOTEX Testnet ( Chain ID : 4690)</p></div>
                             : <div></div>}
                         </Grid.Row>
