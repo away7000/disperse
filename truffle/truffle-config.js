@@ -71,6 +71,13 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true
     },
+    condor: {
+      provider: () => new HDWalletProvider(mnemonic, `https://testnet.condor.systems/rpc`),
+      network_id: 188881,
+      confirmations: 10,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
